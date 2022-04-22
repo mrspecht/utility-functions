@@ -1,6 +1,6 @@
 ## JavaScript utility functions
 
-List of JavaScript utility functions to improve your work efficiency
+List of JavaScript utility functions to improve your work efficiency.
 
 ```javascript
 // Add event listener
@@ -28,7 +28,7 @@ export function print(arg) {
   console.log(arg);
 }
 
-// Return a random number between - and including - 'min' and 'max'
+// Generate a random number between - and including - 'min' and 'max'
 export function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }

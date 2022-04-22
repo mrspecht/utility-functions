@@ -1,7 +1,5 @@
 ## Utility functions
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
 List of JavaScript utility functions to improve your work efficiency.
 
 ```javascript

@@ -18,7 +18,7 @@ export function select(selector, parent = document) {
   return parent.querySelector(selector);
 }
 
-// Get a list of HTML elements
+// Get a (node) list of HTML elements
 export function selectAll(selector, parent = document) {
   return [...parent.querySelectorAll(selector)];
 }

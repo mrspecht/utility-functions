@@ -18,17 +18,17 @@ export function selectAll(selector, parent = document) {
   return [...parent.querySelectorAll(selector)];
 }
 
-// Print function
+// Print
 export function print(arg) {
   console.log(arg);
 }
 
-// Return a random number between - and including - 'min' and 'max'
+// Generate a random number between - and including - 'min' and 'max'
 export function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// Sleep function
+// Sleep
 export function sleep(duration) {
   return new Promise(resolve => {
     setTimeout(resolve, duration)

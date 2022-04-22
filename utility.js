@@ -1,8 +1,3 @@
-## Utility functions
-
-List of JavaScript utility functions to improve your work efficiency.
-
-```javascript
 // Add event listener
 export function onEvent(selector, event, callback) {
   return selector.addEventListener(event, callback);
@@ -44,4 +39,3 @@ export function randomNumber(min, max) {
 export function filterArray(array, callback) {
   return array.filter(callback);
 }
-```

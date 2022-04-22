@@ -8,7 +8,7 @@ export function onEvent(selector, event, callback) {
   return selector.addEventListener(event, callback);
 }
 
-// Get element by id
+// Get HTML element by id
 export function getElement(selector, parent = document) {
   return parent.getElementById(selector);
 }
@@ -18,7 +18,7 @@ export function select(selector, parent = document) {
   return parent.querySelector(selector);
 }
 
-// Select all HTML elements
+// Get a list of HTML elements
 export function selectAll(selector, parent = document) {
   return [...parent.querySelectorAll(selector)];
 }

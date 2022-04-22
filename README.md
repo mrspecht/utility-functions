@@ -13,12 +13,12 @@ export function getElement(selector, parent = document) {
   return parent.getElementById(selector);
 }
 
-// Select element
+// Select HTML element
 export function select(selector, parent = document) {
   return parent.querySelector(selector);
 }
 
-// Select all elements
+// Select all HTML elements
 export function selectAll(selector, parent = document) {
   return [...parent.querySelectorAll(selector)];
 }
@@ -28,7 +28,7 @@ export function print(arg) {
   console.log(arg);
 }
 
-// Generate a random number between - and including - 'min' and 'max'
+// Generate random number between - and including - 'min' and 'max'
 export function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }

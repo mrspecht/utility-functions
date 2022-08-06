@@ -4,7 +4,7 @@ List of JavaScript utility functions to improve your work efficiency.
 
 ```javascript
 // Add event listener
-function onEvent(selector, event, callback) {
+function onEvent(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
 
@@ -16,6 +16,11 @@ function getElement(selector, parent = document) {
 // Select HTML element
 function select(selector, parent = document) {
   return parent.querySelector(selector);
+}
+
+// Select all HTML elements
+function selectAll(selector, parent = document) {
+  return parent.querySelectorAll(selector);
 }
 
 // Get a (node) list of HTML elements
@@ -43,5 +48,10 @@ function randomNumber(min, max) {
 // Filter array
 function filterArray(array, callback) {
   return array.filter(callback);
+}
+
+// Create an HTML element
+function create(element, parent = document) {
+  return parent.createElement(element);
 }
 ```

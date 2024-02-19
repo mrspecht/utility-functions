@@ -1,36 +1,26 @@
-## Utility functions
+## JavaScript Utils
 
 List of JavaScript utility functions to improve your work efficiency.
 
 ```javascript
-// Add event listener
-function onEvent(event, selector, callback) {
-  return selector.addEventListener(event, callback);
-}
-
 // Get HTML element by id
-function getElement(selector, parent = document) {
-  return parent.getElementById(selector);
+function getElement(selector) {
+  return document.getElementById(selector);
 }
 
 // Select HTML element
-function select(selector, parent = document) {
-  return parent.querySelector(selector);
+function select(selector) {
+  return document.querySelector(selector);
 }
 
-// Select all HTML elements
-function selectAll(selector, parent = document) {
-  return parent.querySelectorAll(selector);
+// Get a list of HTML elements as an array
+function selectAll(selector) {
+  return [...document.querySelectorAll(selector)];
 }
 
-// Get a (node) list of HTML elements
-function selectAll(selector, parent = document) {
-  return [...parent.querySelectorAll(selector)];
-}
-
-// Print
-function print(arg) {
-  console.log(arg);
+// Add event listener
+function listen(event, selector, callback) {
+  return selector.addEventListener(event, callback);
 }
 
 // Sleep
@@ -51,7 +41,7 @@ function filterArray(array, callback) {
 }
 
 // Create an HTML element
-function create(element, parent = document) {
-  return parent.createElement(element);
+function create(element) {
+  return document.createElement(element);
 }
 ```

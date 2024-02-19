@@ -1,41 +1,41 @@
-// Add event listener
-function onEvent(selector, event, callback) {
-  return selector.addEventListener(event, callback);
-}
-
 // Get HTML element by id
-function getElement(selector, parent = document) {
-  return parent.getElementById(selector);
+export function getElement(selector) {
+  return document.getElementById(selector);
 }
 
 // Select HTML element
-function select(selector, parent = document) {
-  return parent.querySelector(selector);
+export function select(selector) {
+  return document.querySelector(selector);
 }
 
-// Get a (node) list of HTML elements
-function selectAll(selector, parent = document) {
-  return [...parent.querySelectorAll(selector)];
+// Get a list of HTML elements as an array
+export function selectAll(selector) {
+  return [...document.querySelectorAll(selector)];
 }
 
-// Print
-function print(arg) {
-  console.log(arg);
+// Add event listener
+export function listen(event, selector, callback) {
+  return selector.addEventListener(event, callback);
 }
 
 // Sleep
-function sleep(duration) {
+export function sleep(duration) {
   return new Promise(resolve => {
     setTimeout(resolve, duration)
   });
 }
 
 // Generate random number between - and including - 'min' and 'max'
-function randomNumber(min, max) {
+export function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 // Filter array
-function filterArray(array, callback) {
+export function filterArray(array, callback) {
   return array.filter(callback);
+}
+
+// Create an HTML element
+export function create(element) {
+  return document.createElement(element);
 }

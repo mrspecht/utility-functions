@@ -1,4 +1,4 @@
-## JavaScript Utils
+## JavaScript utils
 
 List of JavaScript utility functions to improve your work efficiency.
 

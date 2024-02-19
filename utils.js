@@ -1,16 +1,16 @@
 // Get HTML element by id
-export function getElement(selector) {
-  return document.getElementById(selector);
+export function getElement(selector, scope = document) {
+  return scope.getElementById(selector);
 }
 
 // Select HTML element
-export function select(selector) {
-  return document.querySelector(selector);
+export function select(selector, scope = document) {
+  return scope.querySelector(selector);
 }
 
 // Get a list of HTML elements as an array
-export function selectAll(selector) {
-  return [...document.querySelectorAll(selector)];
+export function selectAll(selector, scope = document) {
+  return [...scope.querySelectorAll(selector)];
 }
 
 // Add event listener
@@ -27,7 +27,7 @@ export function sleep(duration) {
 
 // Generate random number between - and including - 'min' and 'max'
 export function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 // Filter array

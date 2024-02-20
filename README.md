@@ -1,15 +1,6 @@
-## JavaScript utility package
+## JavaScript utility functions
 
 List of JavaScript utility functions to improve your work efficiency.
-
-
-Using the template
-
-```bash
-
-$ npm i js-utility-pkg
-
-```
 
 Functions available
 

@@ -1,7 +1,5 @@
 ## JavaScript utility functions
 
-List of JavaScript utility functions to improve your work efficiency.
-
 ```javascript
 // Get HTML element by id
 function getElement(selector, scope = document) {
@@ -50,6 +48,8 @@ function print(...args) {
   args.forEach(arg => console.log(arg));
 }
 ```
+
+<br />
 
 > [!TIP]
 > Add your utility functions to a file (utils.js) and use a server to handle

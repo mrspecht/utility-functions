@@ -1,5 +1,7 @@
 ## JavaScript utility functions
 
+<br />
+
 ```javascript
 // Get HTML element by id
 function getElement(selector, scope = document) {

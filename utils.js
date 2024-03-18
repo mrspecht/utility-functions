@@ -18,11 +18,14 @@ export function listen(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
 
-// Sleep
-export function sleep(duration) {
-  return new Promise(resolve => {
-    setTimeout(resolve, duration)
-  });
+// Create HTML element
+export function create(element) {
+  return document.createElement(element);
+}
+
+// Initialize array with n values from 0 to n - 1
+export function initArray(n) {
+  return Array.from(Array(n).keys());
 }
 
 // Generate random number between - and including - 'min' and 'max'
@@ -30,12 +33,14 @@ export function randomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-// Filter array
-export function filterArray(array, callback) {
-  return array.filter(callback);
+// Sleep
+export function sleep(duration) {
+  return new Promise(resolve => {
+    setTimeout(resolve, duration)
+  });
 }
 
-// Create an HTML element
-export function create(element) {
-  return document.createElement(element);
+// Print multiple arguments
+export function print(...args) {
+  args.forEach(arg => console.log(arg));
 }

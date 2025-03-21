@@ -3,51 +3,56 @@
 <br />
 
 ```javascript
-// Get HTML element by id
-function getElement(selector, scope = document) {
+// Get an element by id
+export function getElement(selector, scope = document) {
   return scope.getElementById(selector);
 }
 
-// Select HTML element
-function select(selector, scope = document) {
+// Select an element by name, class or id
+export function select(selector, scope = document) {
   return scope.querySelector(selector);
 }
 
-// Get a list of HTML elements as an array
-function selectAll(selector, scope = document) {
+// Select all matching elements as an array
+export function selectAll(selector, scope = document) {
   return [...scope.querySelectorAll(selector)];
 }
 
-// Add event listener
-function listen(event, selector, callback) {
+// Add an event listener
+export function listen(event, selector, callback) {
   return selector.addEventListener(event, callback);
 }
 
-// Create HTML element
-function create(element) {
+// Create an element
+export function create(element) {
   return document.createElement(element);
 }
 
-// Initialize array with n values from 0 to n - 1
-function initArray(n) {
-  return Array.from(Array(n).keys());
+// Set multiple attributes on an element
+export function setAttributes(element, attributes) {
+  Object.keys(attributes).forEach(prop => element.setAttribute(prop, attributes[prop]));
 }
 
-// Generate random number between - and including - 'min' and 'max'
-function randomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+// Check if an element has a specific class
+export function hasClass(element, className) {
+  return element.classList.contains(className);
 }
 
 // Sleep
-function sleep(duration) {
+export function sleep(duration) {
   return new Promise(resolve => {
     setTimeout(resolve, duration)
   });
 }
 
-// Print multiple arguments
-function print(...args) {
-  args.forEach(arg => console.log(arg));
+// Generate a random integer between, and including, 'min' and 'max'
+export function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// Filter array
+export function filterArray(array, callback) {
+  return array.filter(callback);
 }
 ```
 
